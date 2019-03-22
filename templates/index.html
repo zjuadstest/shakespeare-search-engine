@@ -1,0 +1,22 @@
+<!doctype html>
+    <html>
+    <head>
+        <title>Shakespeare Search Engine</title>
+    </head>
+    <body>
+    <h1>Search Shakespeare works</h1>
+    <p>source: <a href="http://shakespeare.mit.edu/">http://shakespeare.mit.edu/</a></p>
+    <img src="http://shakespeare.mit.edu/shake.gif">
+    <form method="post">
+    <input type="text" name="search-box" placeholder="What do you want?">
+        <button>Search</button>
+    </form>
+
+
+        <ul>
+            {% for link in links %}
+            <li><a href="{{ link }}"> {{link}} </a></li>
+            {% endfor %}
+        </ul>
+    </body>
+    </html>
